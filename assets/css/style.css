@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #87CEEB; /* Sky blue */
+}
+
+#gameCanvas {
+    display: block;
+    width: 800px; /* Set your desired width */
+    height: 400px; /* Set your desired height */
+    background: url('../images/map.png') no-repeat center center; /* Relative path */
+    background-size: cover; /* Ensures the image covers the entire canvas */
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+
+.character {
+    width: 50px;
+    height: 50px;
+    background-color: #FFCC00; /* Character color */
+    position: absolute;
+    bottom: 50px; /* Starting position */
+    transition: bottom 0.1s;
+}
+
+.ball {
+    position: absolute;
+    width: 10px; /* Ball width */
+    height: 10px; /* Ball height */
+    background-color: black; /* Ball color */
+    border-radius: 50%; /* Make it round */
+}
+
